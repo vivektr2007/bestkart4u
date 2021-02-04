@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Invoice" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d6ff8f5b-dc02-4e4a-940a-126a6f234c91">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="20"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="181" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a5dbe3bc-770f-4ff2-b9e2-9cf7478b1a5e" x="169" y="19" width="146" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Retail Invoice/Bill]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="980e0dca-d08d-4dfb-a1d6-8cdaa7a0a8b7" x="2" y="62" width="61" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order ID:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b9e3abd-0c5a-4ec0-a89a-ba51bf23b111" x="5" y="85" width="58" height="20"/>
+				<textElement/>
+				<text><![CDATA[Order Date:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="03e454fa-1bde-4410-a305-ad1ce786c3a7" x="2" y="51" width="553" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="28f2f9b0-f954-400a-aaad-2c629e759377" x="4" y="108" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Invoice Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="13d308e1-56fa-4277-bd3f-0d285334f760" x="190" y="59" width="100" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Billing Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7466d75e-b8d6-4bc2-926a-c212903a2a3c" x="391" y="58" width="100" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Shipping Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="712844cb-f4bd-4d40-851a-514f0c4cdb51" x="3" y="157" width="30" height="20"/>
+				<textElement/>
+				<text><![CDATA[S. No.]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="35be6790-0ce3-4bc6-a3c4-82bc69bee905" x="2" y="151" width="553" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="178d28fa-ea40-4ce8-9c92-0454f933b363" x="2" y="179" width="553" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="3d745ae2-e039-40dd-8011-9bf8d27ce807" x="46" y="157" width="94" height="20"/>
+				<textElement/>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58eec935-fe2b-4f1a-b999-ccf0322e0f8f" x="142" y="158" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Brand Name ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0b3425cc-6830-4423-968f-17f0104122e5" x="242" y="157" width="32" height="20"/>
+				<textElement/>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,428 @@
+/*  Common CSS starts here  */
+
+
+*{
+	padding:0px; margin:0px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, top-nav, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, top-nav, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img{
+	border:none; outline:none;
+}
+a{
+	color:#a3090b; text-decoration:none;
+}
+a:hover{
+	color:#14130f; text-decoration:none;
+}
+body{
+	background:#e6e6e6; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#14130f;
+}
+.main_wrapper{
+	float:left; width:100%; padding:35px 0px 0px 0px;
+}
+
+
+
+/*  Common CSS ends here  */
+
+/*  CSS for desktop starts here(1024px)  */
+
+.wrapper{
+	width:1000px; margin:0 auto;
+}
+.logo{
+	float:left; width:20%;
+}
+.logo a{
+	background:url(../images/logo.png) no-repeat; width:152px; height:43px; display:block; text-indent:-9999px;
+}
+.top_menu{
+	float:right; width:75%; font-family: 'Roboto', sans-serif;
+}
+.top_menu_block{
+	float:left; width:100%; padding:0px 0px 15px 0px;
+}
+.top_menu_block ul#top_sub_menu li{
+	float:right; width:auto; padding:0px 20px; background:url(../images/top_sub_list_icon.png) no-repeat left center; display:inline;
+}
+.top_menu_block ul#top_sub_menu li:last-child{
+	background:none;
+}
+.top_menu_block ul#top_sub_menu li:first-child{
+	padding:0px 0px 0px 20px;
+}
+.top_menu_block li a{
+	color:#0b0b0b;
+}
+.top_menu_block li a:hover{
+	color:#a3090b;
+}
+.top_menu_block ul#contact li{
+	float:right; width:auto; padding:0px 0px 0px 30px; display:inline;
+}
+.top_menu_block ul#contact li a{
+	line-height:25px;
+}
+.top_menu_block ul#contact li a.call-us{
+	background:url(../images/call.png) no-repeat left center; text-indent:30px; float:left; width:100%;
+}
+.top_menu_block ul#contact li a.email-us{
+	background:url(../images/mail.png) no-repeat left center; text-indent:20px; float:left; width:100%;
+}
+.main_menu a#pull{
+	display:none;
+}
+
+
+
+/*  Main Menu CSS starts here  */
+
+.main_menu{
+	float:left; width:100%; background:url(../images/main-menu.jpg) repeat-x; font-family: 'Roboto', sans-serif; font-size:13px; border-radius:7px 7px 0px 0px; -o-border-radius:7px 7px 0px 0px; -webkit-border-radius:7px 7px 0px 0px; -moz-border-radius:7px 7px 0px 0px; padding:0px;
+}
+.main_menu ul#menu{
+	float:left; width:98%; padding:0px 1%;
+}
+.main_menu ul#menu li{
+	float:left; width:auto; padding:10px 5px 10px 0px;
+}
+.main_menu ul#menu li a{
+	line-height:30px; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; padding:0px 19px; color:#ffffff; float:left; width:auto; text-transform:uppercase;
+}
+.main_menu ul#menu li a:hover,.main_menu ul#menu li a.active{
+	background:rgba(0,0,0,0.25);
+}
+
+
+/*  Main Menu CSS ends here  */
+
+/*  Banner CSS starts here  */
+
+.banner{
+	float:left; width:1000px; height:342px; padding:0px 0px 10px 0px;
+}
+.banner img{
+	border:1px solid rgba(126,125,125,0.25); border-top:none; height:342px; width:998px;
+}
+#slideshow{ 
+	position: relative; 
+	width: 100%; 
+	height: 100%; 
+}
+#slideshow > div{
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	right:0px; 
+	bottom:0px; 
+}
+
+
+
+/*  Banner CSS ends here */
+
+/*   Solutions CSS starts here   */
+
+.solutions{
+	float:left; width:1000px; padding:0px 0px 10px 0px;
+}
+.solutions li{
+	float:left; width:327px; padding:0px 8px 0px 0px;
+}
+.solutions li div.solutions_block{
+	float:left; width:323px; position:relative; height:149px; padding:1px; border:1px dotted rgba(125,125,125,0.4);
+}
+.solutions_text{
+	position:absolute; width:100%; bottom:0px; color:#030303; font-size:14px; line-height:37px; text-align:center; text-transform:uppercase; background:rgba(255,255,255,0.7); font-weight:500;
+}
+.solutions li:last-child{
+	padding:0px; float:right;
+}
+
+/*   Solutions CSS ends here  */
+
+
+
+/*  Content Part starts here  */
+
+.main_content{
+	float:left; width:1000px; background:url(../images/content_bottom.png) no-repeat bottom; padding:0px 0px 70px 0px;
+}
+.main_content_block{
+	float:left; width:100%; background:#ffffff; border-radius:7px; -o-border-radius:7px; -webkit-border-radius:7px; -moz-border-radius:7px; padding:10px 0px;
+}
+.widgets{
+	float:left; width:256px;
+}
+.widgets_block{
+	float:left; width:100%; padding:0px 0px 62px 0px;
+}
+.widgets_block:last-child{
+	padding:0px;
+}
+.widget_heading{
+	float:left; width:100%; background:url(../images/widgets_heading.jpg) repeat-x; border-radius:0px 7px 7px 0px; -o-border-radius:0px 7px 7px 0px; -moz-border-radius:0px 7px 7px 0px; -webkit-border-radius:0px 7px 7px 0px;
+}
+.widget_heading h2{
+	font-size:15px; font-weight:300; text-transform:uppercase; color:#ffffff; line-height:35px; text-indent:10px; font-family: 'Roboto', sans-serif;
+}
+.widget_content{
+	float:left; width:100%; padding:10px 0px 0px 0px;
+}
+.widget_content li{
+	float:left; width:95%; padding:0px 0px 5px 5%;
+}
+.widget_content li p{
+	padding:0px 0px 0px 8%;
+}
+.widget_content li:hover a{
+	text-indent:25px;
+}
+.widget_content li a{
+	float: left;
+	width: 100%;
+	color: #14130f;
+	text-decoration: none;
+	background: url(../images/widget_list_bg.gif) no-repeat left 6px;
+	line-height: 26px;
+	padding: 0px 0px 0px 0px; text-indent:20px; transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s;
+}
+.widget_content li a b{
+	font-weight:bold;
+}
+.container{
+	float:right; width:710px; padding:0px 10px 0px 0px;
+}
+.post_heading{
+	float:left; width:100%;
+}
+.post_heading h1 {
+	color:#a3090b; text-decoration:none; font-family: 'Roboto', sans-serif; font-weight:300; border-bottom:1px dotted #ccc; line-height:34px; text-transform:uppercase; font-size:19px;
+}
+.post_content{
+	float:left; width:100%; padding:10px 0px;
+}
+.post_content p{
+	line-height:19px; padding:0px 0px 20px 0px; text-align:justify;
+}
+.post_content p:last-child{
+	padding:0px;
+}
+.read_more{
+	float: left;
+	width: 100%;
+	padding:0px 0px 10px 0px;
+}
+.read_more a{
+	float: right;
+	width: 119px;
+	background: url(../images/read_more.gif) no-repeat;
+	height: 27px;
+}
+.space{
+	float:left; width:100%; padding:5px 0px;
+}
+.bottom_content{
+	float:left; width:100%; background:#ffffff; border-radius:0px 0px 7px 7px; -o-border-radius:0px 0px 7px 7px; -webkit-border-radius:0px 0px 7px 7px; -moz-border-radius:0px 0px 7px 7px; padding-bottom:10px;
+}
+.right{
+	float:right!important;
+}
+.bottom_content_block{
+	float:left; width:48%;
+}
+.bottom_content_block div.widget_heading{
+	width:53%;
+}
+.bottom_content_block div.widget_content li{
+	background:none; padding:0px 0px 15px 2%; width:98%;
+}
+.bottom_content_block div.widget_content li p{
+	padding:0px;
+}
+.bottom_content_block div.widget_content li a{
+	background:none; text-indent:0px;
+}
+.right div.widget_heading{
+	float:right; border-radius:7px 0px 0px 7px; -o-border-radius:7px 0px 0px 7px; -webkit-border-radius:7px 0px 0px 7px; -moz-border-radius:7px 0px 0px 7px;
+}
+.testimonials{
+	float:right; background:url(../images/testimonials_bg.png) no-repeat; width:295px; height:83px; margin:0px 15px 0px 0px; padding:60px 25px 0px 25px;
+}
+.testimonials p{
+	text-align:center; line-height:20px;
+}
+.testimonials p.text{
+	text-align:right; font-weight:bold; padding-top:3px;
+}
+
+.top_strip{
+	float:left; width:100%; background:url(../images/tweed.png); font-family:'Roboto', sans-serif; font-size:12px;
+}
+.top_strip div.left_block{
+	float:left; width:auto;
+}
+.top_strip div.right_block{
+	float:right; width:auto;
+}
+.top_strip li{
+	float:left; width:auto; padding:0px 45px 0px 0px;
+}
+.top_strip li a{
+	color:#ffffff; line-height:35px; float:left; transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s; text-transform:uppercase;
+}
+.top_strip li a:hover{
+	color:#fbfbfb;
+}
+.top_strip li a.sub_logo{
+	background:url(../images/sub_logo.png) no-repeat left center; padding:0px 0px 0px 25px;
+}
+.top_strip li a.register_online{
+	background:url(../images/red-dot.png) no-repeat left center; padding:0px 0px 0px 20px;
+}
+.right{
+	float:right!important;
+}
+.right_block li{
+	padding:0px 10px; background:url(../images/sub_top_list.png) no-repeat right center;
+}
+.right_block li:last-child{
+	background:none;
+}
+
+
+
+
+/*  Content Part ends here  */
+
+/*  Footer CSS starts here */
+
+.footer{
+	float:left; width:100%; padding:15px 0px 5px 0px;
+}
+.footer_block{
+	float:left; width:70%;
+}
+.footer_block li{
+	float:left; width:auto; background:url(../images/footer_list.jpg) no-repeat right center; padding:0px 10px; font-size:12px;
+}
+.footer_block li:last-child{
+	background:none;
+}
+.footer_block li a{
+	color:#807a7a;
+}
+.footer_block li a:hover{
+	color:#565454;
+}
+.footer_block ul,.footer_block p{
+	float:left; width:100%; color:#807a7a;
+}
+.footer_block p{
+	text-indent:10px; padding:4px 0px 0px 0px; font-size:12px;
+}
+.footer_width ul.social_media li{
+	float:right; padding:0px 0px 0px 10px; background:none; line-height:25px; color:#807a7a;
+}
+.footer_width ul.social_media li a.fb{
+	float:left; background:url(../images/facebook.jpg) no-repeat; width:23px; height:23px;
+}
+.footer_width ul.social_media li a.twitter{
+	float:left; background:url(../images/twitter.jpg) no-repeat; width:23px; height:23px;
+}
+.footer_width{
+	width:27%;
+}
+.quotes{
+	display:none;
+}
+.solutions_block img{
+	width:323px; height:150px;
+}
+
+/*  Footer CSS ends here */
+
+
+/*  CSS for desktop(1024px) ends here  */
+
+/*  CSS for 800px starts here  */
+
+/*  CSS for 800px ends here  */
+
+/*  CSS for 1440px starts here  */
+
+@media only screen and (max-width:1440px) {
+}
+
+/*  CSS for 1440px ends here  */
+
+
+/*  CSS for 1366px starts here  */
+
+@media only screen and (max-width:1366px) {
+}
+
+/*  CSS for 1366px ends here  */
+
+
+/*  CSS for 1280px starts here  */
+
+@media only screen and (max-width:1280px) {
+}
+
+/*  CSS for 1280px ends here  */
+
+/*  CSS for 768px starts here  */
+
+@media only screen and (max-width:768px) {
+}
+
+/*  CSS for 768px ends here  */
+
+/*  CSS for 640px starts here  */
+
+@media only screen and (max-width:640px) {
+}
+
+/*  CSS for 640px ends here  */
+
+
+/*  CSS for 480px starts here  */
+
+@media only screen and (max-width:480px) {
+}
+
+/*  CSS for 480px ends here  */
+
+/*  CSS for 320px starts here  */
+
+@media only screen and (max-width:320px) {
+}
+
+/*  CSS for 320px ends here  */

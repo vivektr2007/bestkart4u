@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+   
+	<package name="/" extends="struts-default">
+	
+	<!--<global-exception-mappings>
+			<exception-mapping result="" exception="">/</exception-mapping>
+		</global-exception-mappings>
+	 -->
+		<action name="ViewProducts" class="com.retailshop.action.ViewProducts" method="viewProducts">
+			<result name="success">/products.jsp</result>
+		</action>
+
+		<action name="ViewProductsForBrand" class="com.retailshop.action.ProductSearchAction" method="productsForBrand">
+			<result name="success">/productsForBrandSearch.jsp</result>
+		</action>
+		
+		<action name="SearchProductActionHeader" class="com.retailshop.action.ProductSearchAction" method="productsForBrandHeaderSearch">
+			<result name="success">/productsSearchHeader.jsp</result>
+		</action>
+		
+		<action name="ProductSearchAutocomplete" class="com.retailshop.action.ProductSearchAction" method="searchProductFromAutocomplete">
+		</action>
+		
+		<action name="PendingOrderIdSearchAutocomplete" class="com.retailshop.action.ProductSearchAction" method="searchPendingOrderIdAutocomplete">
+		</action>
+		
+		<action name="PreviousOrderIdSearchAutocomplete" class="com.retailshop.action.ProductSearchAction" method="searchPreviousOrderIdAutocomplete">
+		</action>
+		
+		<!-- 
+		<action name="ViewProductsForBrandPagination" class="com.retailshop.action.ProductSearchAction" method="productsForBrandPagination">
+			<result name="success">/productsForBrandSearch.jsp</result>
+		</action>
+		 -->
+		<action name="ContactAction" class="com.retailshop.action.ContactAction" method="contactUs">
+			<result name="success">/contacts.jsp</result>
+		</action>
+		
+		<action name="ViewProductsForcategory" class="com.retailshop.action.ViewProducts" method="viewProductsForCategory">
+			<result name="success">/productsForCategory.jsp</result>
+		</action>
+		
+		<action name="wishlistLoginSuccess" class="com.retailshop.action.WishlistAction" method="wishlistLoginSuccess">
+			<result name="success" type="chain">ViewProducts</result>
+			<result name="successForProductCategory" type="chain">ViewProductsForcategory</result>
+			<result name="successForProductBrandSearch" type="chain">ViewProductsForBrand</result>
+			<result name="SearchProductActionHeader" type="chain">SearchProductActionHeader</result>
+			
+		</action>
+		
+		<action name="WishListActionLogin" class="com.retailshop.action.WishlistAction" method="wishlistLogin">
+			<result name="success">/login.jsp</result>	
+		</action>
+		
+		<action name="ViewProductsPagination" class="com.retailshop.action.ViewProducts" method="viewProductsPagination">
+			<result name="success">/products.jsp</result>
+		</action>
+		
+		<action name="GetListFromSideBar" class="com.retailshop.action.ViewProducts" method="getListFromSideBar">
+			<result name="success">/products.jsp</result>
+		</action>
+		
+		<action name="ViewWishlist" class="com.retailshop.action.WishlistAction" method="getProductsForWishlist">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="AddToCart" class="com.retailshop.action.ViewProducts" method="addToCart">
+		</action>
+		
+		<action name="AddToCartFromWishlist" class="com.retailshop.action.WishlistAction" method="addToCartFromWishlist">
+		</action>
+		
+		<action name="RemoveFromWishlist" class="com.retailshop.action.WishlistAction" method="removeFromWishlist">
+		</action>
+		
+		<action name="AddToWishList" class="com.retailshop.action.WishlistAction" method="addToWishList">
+			<result name="gotTOLogin">/login.jsp</result>
+			<result name="input">/login.jsp</result>
+			
+		</action>
+		
+		<action name="DeleteFromCart" class="com.retailshop.action.ViewProducts" method="deleteFromCart">
+		</action>
+		
+		<action name="IncreaseQuantity" class="com.retailshop.action.ViewProducts" method="increaseQuantity">
+		</action>
+		
+		<action name="DecreaseQuantity" class="com.retailshop.action.ViewProducts" method="decreaseQuantity">
+		</action>
+		
+		<action name="ProductsDetail" class="com.retailshop.action.ViewProductsDetail" method="getProductDetails">
+			<result>/productDetails.jsp</result>
+		</action>
+		
+		<action name="ProductsDetailForCategory" class="com.retailshop.action.ViewProductsDetail" method="getProductDetailsForCategory">
+			<result>/productDetailsForCategory.jsp</result>
+		</action>
+		
+		<action name="LoginAction" class="com.retailshop.action.LoginAction">
+			<result>/checkoutCart.jsp</result>
+			<result name="successToIndex">/index.jsp</result>
+			<result name="login">/login.jsp</result>
+			<result name="successToWishListforProducts" type="chain">wishlistLoginSuccess</result>
+		</action>
+		
+		<action name="FBLoginAction" class="com.retailshop.action.LoginAction" method="fbLogin">
+			<result>/checkoutCart.jsp</result>
+			<result name="successToIndex">/index.jsp</result>
+			<result name="login">/login.jsp</result>
+			<result name="successToWishListforProducts" type="chain">wishlistLoginSuccess</result>
+		</action>
+		
+		
+		<action name="ChangePasswordAction" class="com.retailshop.action.LoginAction" method="changePassword">
+			<result>/changePassword.jsp</result>
+			<result name="error">/changePassword.jsp</result>
+		</action>
+		
+		<action name="ForgetPassword" class="com.retailshop.action.LoginAction" method="forgetPassword">
+			<result>/forgetPassword.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="RegisterAction" class="com.retailshop.action.RegisterAction">
+			<result name="login">/register.jsp</result>
+			<result name="input">/register.jsp</result>
+			<result name="success">/index.jsp</result>	
+		</action>
+		
+		<action name="GetUpdateProfileForm" class="com.retailshop.action.RegisterAction" method="getUpdateProfileForm">
+			<result name="success">/updateProfileForm.jsp</result>	
+		</action>
+		
+		<action name="UpdateProfile" class="com.retailshop.action.RegisterAction" method="updateProfile">
+			<result name="input">/updateProfileForm.jsp</result>
+			<result name="success">/updateProfileForm.jsp</result>	
+			<result name="error">/updateProfileForm.jsp</result>
+		</action>
+		
+		<action name="checkEmailID" class="com.retailshop.action.RegisterAction" method="checkEmailID">
+		</action>
+		
+		<action name="CheckOutAction" class="com.retailshop.action.ChechOutAction" method="getCheckoutDetail">
+			<result name="success">/placeOrder.jsp</result>
+		</action>
+		
+		<action name="AddAddress" class="com.retailshop.action.ChechOutAction" method="addAddress">
+			<result name="success" type="chain">CheckOutAction</result>
+		</action>
+		
+		<action name="CheckCouponCode" class="com.retailshop.action.ChechOutAction" method="checkCouponCode"></action>
+		
+		
+		<action name="SubmitCart" class="com.retailshop.action.ChechOutAction" method="submitCart">
+			<result name="success">/successSubmitCart.jsp</result>
+		</action>
+		
+		<action name="CaptchaAction" class="com.retailshop.action.CaptchaAction"></action>
+		
+		<action name="LogoutAction" class="com.retailshop.action.LogoutAction">
+			<result>/successLogout.jsp</result>
+		</action>
+		
+		<action name="CheckOutFromCart" class="com.retailshop.action.ChechOutAction" method="checkOutFromCart">
+			<result name="GoToCart">/checkoutCart.jsp</result>
+			<result name="GoToLogin">/login.jsp</result>
+		</action>
+		
+    	<action name="AdminLogin" class="com.retailshop.action.admin.AdminLoginAction">
+			<result name="success">/adminSuccess.jsp</result>
+			<result name="error">/adminLogin.jsp</result>
+		</action>
+		
+		<action name="ViewOrderDetailAction" class="com.retailshop.action.admin.ViewOrderDetailAction">
+			<result>/adminHome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetGenerateReceiptForm" class="com.retailshop.action.admin.ViewOrderDetailAction" method="getOrdersForInvoice">
+			<result>/generateReceiptForm.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetGenerateCustomReceiptForm" class="com.retailshop.action.admin.ViewOrderDetailAction" method="getCustomInvoiceForm">
+			<result>/generateCustomReceiptForm.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GenerateCustomReceiptAction" class="com.retailshop.action.admin.ViewOrderDetailAction" method="generateCustomInvoice">
+			<result>/generateCustomReceiptForm.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GenerateReceiptAction" class="com.retailshop.action.admin.ViewOrderDetailAction" method="generateReceipt">
+			
+		</action>
+		
+		<action name="AddMainCategory" class="com.retailshop.action.admin.AddProductAction" method="addMainCategory">
+			<result>/addMainCategory.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetSubcategoryForm" class="com.retailshop.action.admin.AddProductAction" method="getSubCategoryForm">
+			<result>/addSubCategory.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="AddSubcategoryForm" class="com.retailshop.action.admin.AddProductAction" method="addSubCategory">
+			<result>/addSubCategory.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetChildcategoryForm" class="com.retailshop.action.admin.AddProductAction" method="getChildCategoryForm">
+			<result>/addChildCategory.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetAllSSubCategory" class="com.retailshop.action.admin.AddProductAction" method="getAllSubcategory">
+		</action>
+		
+		<action name="AddChildcategoryForm" class="com.retailshop.action.admin.AddProductAction" method="addChildCategoryForm">
+			<result>/addChildCategory.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetProductForm" class="com.retailshop.action.admin.AddProductAction" method="getProductForm">
+			<result>/addProductForm.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="GetProductVariantForm" class="com.retailshop.action.admin.AddProductAction" method="getProductVariantsForm">
+			<result>/addProductVariantsForm.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="AddProductVariantsAction" class="com.retailshop.action.admin.AddProductAction" method="addProductVariants">
+			<result>/addProductVariantsForm.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		
+		<action name="GetAllChildCategoryAjax" class="com.retailshop.action.admin.AddProductAction" method="getAllChildCategory">
+		</action>
+		
+		<action name="AddProductAction" class="com.retailshop.action.admin.AddProductAction" method="addProduct">
+			<interceptor-ref name="fileUpload">
+		        <param name="allowedTypes">
+		          image/png,image/gif,image/jpeg,image/pjpeg
+		        </param>
+        	</interceptor-ref>
+        	<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result>/addProductForm.jsp</result>
+		</action>
+		
+		<action name="DeleteAllUnusedImages" class="com.retailshop.action.admin.ZipUploadAction" method="deleteUnusedImages">
+			<result>/deleteUnusedImages.jsp</result>
+		</action>
+		
+		<action name="GetUploadImageZipForm" class="com.retailshop.action.admin.ZipUploadAction" method="getUploadImageZipForm">
+			<result>/imageUploadZip.jsp</result>
+		</action>
+		
+		<action name="ZipUploadTest" class="com.retailshop.action.admin.ZipUploadAction">
+			<interceptor-ref name="fileUpload">
+		        <param name="allowedTypes">
+		          image/png,image/gif,image/jpeg,image/pjpeg
+		        </param>
+        	</interceptor-ref>
+        	<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result>/imageUploadZip.jsp</result>
+		</action>
+		
+		<action name="GetUploadProductForm" class="com.retailshop.action.admin.MassUpload" method="getUploadProductForm">
+			<result>/uploadProductForm.jsp</result>
+		</action>
+		
+		<action name="UploadProduct" class="com.retailshop.action.admin.MassUpload" method="uploadProduct">
+			<interceptor-ref name="fileUpload">
+		        
+        	</interceptor-ref>
+        	<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result>/uploadProductForm.jsp</result>
+		</action>
+		
+		<action name="DownloadAllProductForm" class="com.retailshop.action.admin.DownloadAllProductAction" method="getDownloadProductForm">
+			<result>/downloadProductForm.jsp</result>
+		</action>
+		
+		<action name="DownloadAllProductsAction" class="com.retailshop.action.admin.DownloadAllProductAction">
+		</action>
+		
+		<action name="DownloadProductTemplate" class="com.retailshop.action.admin.MassUpload" method="downloadTemplate">
+			
+		</action>
+		
+		<action name="GetMassUpdateProductForm" class="com.retailshop.action.admin.MassUpdateProduct" method="getMassUpdateProductForm">
+			<result>/updateMassProductForm.jsp</result>
+		</action>
+		
+		<action name="DownloadProductForUpdate" class="com.retailshop.action.admin.MassUpdateProduct" method="downloadProductForUpdate">
+		</action>
+		
+		<action name="UpdateMassProduct" class="com.retailshop.action.admin.MassUpdateProduct">
+		</action>
+		
+		<action name="DeleteCategoryForm" class="com.retailshop.action.admin.DeleteAction" method="deleteCategoryForm">
+			<result>/deleteCategoryForm.jsp</result>
+		</action>
+		
+		<action name="DeleteCategoryAction" class="com.retailshop.action.admin.DeleteAction" method="deleteCategory">
+			<result>/deleteCategoryForm.jsp</result>
+		</action>
+		
+		<action name="DeleteSubCategoryForm" class="com.retailshop.action.admin.DeleteAction" method="deleteSubCategoryForm">
+			<result>/deleteSubCategoryForm.jsp</result>
+		</action>
+		
+		<action name="DeleteSubCategoryAction" class="com.retailshop.action.admin.DeleteAction" method="deleteSubCategory">
+			<result>/deleteSubCategoryForm.jsp</result>
+		</action>
+		
+		<action name="DeleteChildCategoryForm" class="com.retailshop.action.admin.DeleteAction" method="deleteChildCategoryForm">
+			<result>/deleteChildCategoryForm.jsp</result>
+		</action>
+		
+		<action name="DeleteChildCategoryAction" class="com.retailshop.action.admin.DeleteAction" method="deleteChildCategory">
+			<result>/deleteChildCategoryForm.jsp</result>
+		</action>
+		
+		<action name="DeleteProductForm" class="com.retailshop.action.admin.DeleteAction" method="deleteProductForm">
+			<result>/deleteProductForm.jsp</result>
+		</action>
+		
+		<action name="DeleteProductAction" class="com.retailshop.action.admin.DeleteAction" method="deleteProducts">
+			<result>/deleteProductForm.jsp</result>
+		</action>
+		
+		<action name="GetProductAjax" class="com.retailshop.action.admin.DeleteAction" method="getProductsAjax">
+			
+		</action>
+		
+		<action name="EditCategoryForm" class="com.retailshop.action.admin.EditAction" method="editCategoryForm">
+			<result>/editCategoryForm.jsp</result>
+		</action>		
+		
+		<action name="EditCategory" class="com.retailshop.action.admin.EditAction" method="editCategory">
+			<result>/editCategoryForm.jsp</result>
+		</action>
+		
+		<action name="EditSubCategoryForm" class="com.retailshop.action.admin.EditAction" method="editSubCategoryForm">
+			<result>/editSubCategoryForm.jsp</result>
+		</action>		
+		
+		<action name="EditSubCategory" class="com.retailshop.action.admin.EditAction" method="editSubCategory">
+			<result>/editSubCategoryForm.jsp</result>
+		</action>
+		
+		<action name="EditChildCategoryForm" class="com.retailshop.action.admin.EditAction" method="editChildCategoryForm">
+			<result>/editChildCategory.jsp</result>
+		</action>		
+		
+		<action name="EditChildCategory" class="com.retailshop.action.admin.EditAction" method="editChildCategory">
+			<result>/editChildCategory.jsp</result>
+		</action>
+		
+		<action name="GetAllProductForm" class="com.retailshop.action.admin.EditAction" method="getAllProductForm">
+			<result>/getAllProductForEdit.jsp</result>
+		</action>
+		
+		<action name="EditProductForm" class="com.retailshop.action.admin.EditAction" method="editProductForm">
+			<result>/editProductForm.jsp</result>
+		</action>		
+		
+		<action name="EditProduct" class="com.retailshop.action.admin.EditAction" method="editProduct">
+			<result>/getAllProductForEdit.jsp</result>
+		</action>
+		
+		<action name="GetSurveyForm" class="com.retailshop.action.admin.SurveyAction" method="getSurveyForm">
+			<result>/createSurveyForm.jsp</result>
+		</action>
+		
+		<action name="CreateSurveyAction" class="com.retailshop.action.admin.SurveyAction" method="createSurvey">
+			<result>/createSurveyForm.jsp</result>
+		</action>
+		
+		<action name="GetQuestionForm" class="com.retailshop.action.admin.SurveyAction" method="getCreateQuestionForm">
+			<result>/createQuestionForSurvey.jsp</result>
+		</action>
+		
+		<action name="CreateQuestionAction" class="com.retailshop.action.admin.SurveyAction" method="createQuestion">
+			<result>/createQuestionForSurvey.jsp</result>
+		</action>
+		
+		<action name="GetAnswersForm" class="com.retailshop.action.admin.SurveyAction" method="getAnswersForm">
+			<result>/createAnswerForQuestion.jsp</result>
+		</action>
+		
+		<action name="GetAllQuestionForSurvey" class="com.retailshop.action.admin.SurveyAction" method="getQuestionForSurveyAjax" ></action>
+		
+		<action name="CreateAnswerAction"  class="com.retailshop.action.admin.SurveyAction" method="submitAnswer">
+			<result>/createAnswerForQuestion.jsp</result>
+		</action>
+		
+		<action name="ViewSurveyAction" class="com.retailshop.action.admin.SurveyAction" method="viewSurvey">
+			<result>/viewSurveyForm.jsp</result>
+		</action>
+		
+		<action name="ParticipateInSurvey" class="com.retailshop.action.admin.SurveyAction" method="getAllSurveyQuestion">
+			<result>/viewAllSurveyQuestion.jsp</result>
+		</action>
+		
+		<action name="GetUpdateSurveyForm" class="com.retailshop.action.admin.SurveyAction" method="getUpdateSurveyForm">
+			<result>/updateSurvey.jsp</result>
+		</action>
+		
+		<action name="UpdateSurveyAction" class="com.retailshop.action.admin.SurveyAction" method="updateSurvey">
+			<result>/updateSurvey.jsp</result>
+		</action>
+		
+		<action name="GetUpdateQuestionForm" class="com.retailshop.action.admin.SurveyAction" method="getUpdateQuestionForm">
+			<result>/updateQuestion.jsp</result>
+		</action>
+		
+		<action name="UpdateQuestionAction" class="com.retailshop.action.admin.SurveyAction" method="updateQuestion">
+			<result>/updateQuestion.jsp</result>
+		</action>
+		
+		<action name="GetUpdateAnswerForm" class="com.retailshop.action.admin.SurveyAction" method="getUpdateAnswerForm">
+			<result>/updateAnswer.jsp</result>
+		</action>
+		
+		<action name="UpdateAnswerAction" class="com.retailshop.action.admin.SurveyAction" method="updateAnswer">
+			<result>/updateAnswer.jsp</result>
+		</action>
+		
+		<action name="GetAllAnswerForQuestion" class="com.retailshop.action.admin.SurveyAction" method="getAnswerForQuestionAjax" ></action>
+		
+		<action name="DeleteSurveyForm" class="com.retailshop.action.admin.SurveyAction" method="getDeleteSurveyForm">
+			<result>/deleteSurvey.jsp</result>
+		</action>
+		
+		<action name="DeleteSurveyAction" class="com.retailshop.action.admin.SurveyAction" method="deleteSurvey">
+			<result>/deleteSurvey.jsp</result>
+		</action>
+		
+		<action name="UpdatePasswordForm" class="com.retailshop.action.admin.AdminLoginAction" method="getChangePasswordForm">
+			<result>/changePasswordAdmin.jsp</result>
+		</action>
+		
+		<action name="UpdatePassword" class="com.retailshop.action.admin.AdminLoginAction" method="updatePassword">
+			<result>/changePasswordAdmin.jsp</result>
+		</action>
+		
+		<action name="AdminLogout" class="com.retailshop.action.admin.AdminLoginAction" method="logout">
+			<result>/adminLogin.jsp</result>
+		</action>
+		
+		<action name="GetAllCategoryAjax" class="com.retailshop.action.admin.AddProductAction" method="getAllCategoryAjax"></action>
+		
+		<action name="AcceptRejectPendingOrder" class="com.retailshop.action.admin.ViewOrderDetailAction" method="acceptRejectPendingOrder">
+			<result type="chain" name="success">ViewOrderDetailAction</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="AcceptRejectDeliveredOrder" class="com.retailshop.action.admin.ViewOrderDetailAction" method="updatedDeliveredProductForm">
+			<result type="chain" name="success">GetUpdatedDeliveredProductForm</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="ViewPendingOrderAction" class="com.retailshop.action.OrderDetailAction" method="getPendingOrderDetail">
+			<result>/pendingOrderDetail.jsp</result>
+		</action>
+		
+		<action name="GetUpdatedDeliveredProductForm" class="com.retailshop.action.admin.ViewOrderDetailAction" method="getUpdatedDeliveredProductForm">
+			<result>/getUpdatedDeliveredProductForm.jsp</result>
+		</action>
+		
+		<action name="SearchPendingOrder" class="com.retailshop.action.OrderDetailAction" method="searchPendingOrderDetail">
+			<result>/pendingOrderDetail.jsp</result>
+		</action>
+		
+		<action name="ViewPreviousOrderAction" class="com.retailshop.action.OrderDetailAction" method="getPreviousOrderDetail">
+			<result>/previousOrderDetail.jsp</result>
+		</action>
+		
+		<action name="SearchPreviousOrderAction" class="com.retailshop.action.OrderDetailAction" method="searchPreviousOrderDetail">
+			<result>/previousOrderDetail.jsp</result>
+		</action>
+		
+		<action name="SubmitProductFeedback" class="com.retailshop.action.OrderDetailAction" method="submitProductFeedback">
+			<result type="chain" name="success">ViewPreviousOrderAction</result>
+		</action>
+		
+		<action name="CheckAkkImages" class="com.retailshop.action.admin.ResolveImageAction" method="checkAllImages"> 
+			<result>/resolveImages.jsp</result>
+		</action>
+		
+		<!-- <action name="FileUploader" class="com.retailshop.action.admin.UploadImageAjax"> 
+			<result>/resolveImages.jsp</result>
+		</action> -->
+		
+		<action name="FeddbackSubmit" class="com.retailshop.action.CustomerFeedback" method="submitFeedback">
+			
+		</action>
+		
+		<action name="subscribe" class="com.retailshop.action.CustomerFeedback" method="subscribe">
+		</action>
+		
+    </package>
+    
+        <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+        <constant name="struts.devMode" value="false" />
+    	<constant name="struts.custom.i18n.resources" value="ApplicationResources_en.properties" /> 
+    	<constant name="struts.ui.theme" value="simple" />
+    	<constant name="struts.multipart.maxSize" value="30000000" />
+    	
+    	<constant name="struts.action.excludePattern" value="/FileUploader"/>
+</struts>

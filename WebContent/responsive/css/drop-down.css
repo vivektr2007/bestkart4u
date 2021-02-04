@@ -1,0 +1,65 @@
+.main_menu ul{
+	list-style: none;
+}
+.main_menu li{
+	position: relative; float: left;
+}
+.main_menu li a{
+	display:inline-block;
+}
+.main_menu li ul{
+	display: none; width: 200px; border: 1px solid rgba(144,40,3,0.45); border-top:0px; z-index:1000;
+}
+.main_menu li li{
+	padding:0px; width: 100%!important; background:url(../images/main-menu.jpg) repeat-x; font-family: 'Roboto', sans-serif; font-size:12px; padding:0px!important;
+}
+.main_menu li li a:hover{
+	background:url(../images/menu_hover_sub.png) repeat-x;
+}
+.main_menu li li a{
+	width: 100%!important; color: #ffffff; text-decoration: none; display: block; text-indent:10px; line-height:35px!important; padding:0px!important; border-radius:0px!important; -o-border-radius:0px!important; -webkit-border-radius:0px!important; -moz-border-radius:0px!important;
+}
+.main_menu li li a:hover{
+	color:#ffffff;
+}
+.main_menu li:hover ul{
+	display: block; position: absolute; left: 0px; top: 50px;
+}
+
+.main_menu li li ul{
+	width:300px;
+}
+.main_menu li li li ul{
+	width:300px;
+}
+
+.main_menu li li li{
+	padding:0px; width: 100%!important; background:url(../images/main-menu.jpg) repeat-x; font-family: 'Roboto', sans-serif; font-size:12px; padding:0px!important;
+}
+.main_menu li li li a:hover{
+	background:url(../images/menu_hover_sub.png) repeat-x;
+}
+.main_menu li li li a{
+	width: 100%!important; color: #ffffff; text-decoration: none; display: block; text-indent:10px; line-height:35px!important; padding:0px!important; border-radius:0px!important; -o-border-radius:0px!important; -webkit-border-radius:0px!important; -moz-border-radius:0px!important;
+}
+.main_menu ul li li:hover ul{
+	position: absolute; left: 200px; top: 0px; padding-bottom:2px; z-index: 10; border:none;
+}
+.main_menu ul li li li:hover ul{
+	position: absolute; left: 300px; top: 0px; padding-bottom:2px; z-index: 10; border:none;
+}
+.main_menu li li a{
+	transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s;
+}
+ul.menu-drop1,ul.menu-drop2,ul.menu-drop3{
+	display:none!important;
+}
+.main_menu li:hover ul.menu-drop1{
+	display:block!important;
+}
+.main_menu li li:hover ul.menu-drop2{
+	display:block!important;
+}
+.main_menu li li li:hover ul.menu-drop3{
+	display:block!important;
+}

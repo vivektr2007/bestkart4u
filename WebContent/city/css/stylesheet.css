@@ -1,0 +1,677 @@
+*{
+	padding:0px; margin:0px; outline:none;
+}
+img{
+	outline:none; border:none;
+}
+ul, li{
+	list-style:none;
+}
+p{
+	line-height:18px;
+}
+b{
+	font-weight:500;
+}
+a{
+	color:#d9490a; text-decoration:none; outline:none; cursor:pointer;
+}
+a:hover{
+	color:#181818; text-decoration:none;	
+}
+body{
+	padding:0px; margin:0px; font-family: 'Roboto', sans-serif; font-size:12px; color:#181818; line-height:20px;
+}
+input[type="submit"]{
+	cursor:pointer; outline:none;
+}
+
+/*   Header CSS starts here   */
+
+.home_page{
+	height:734px;
+}
+.top_wrapper{
+	float:left; width:100%; position:relative;
+}
+.header_strip{
+	position:absolute; top:0px; width:100%; background:url(../images/header_bg.jpg) no-repeat top center; height:85px;
+}
+.wrapper{
+	margin:0 auto; width:1000px;
+}
+.menu div.wrapper{
+	position:relative;
+}
+.logo{
+	width:203px; position:absolute; height:125px; top:-85px; left:0px; z-index:9999;
+}
+.logo a{
+	float:left; background:url(../images/logo.png) no-repeat 0px -10px; width:203px; height:125px; transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s;
+}
+.logo a:hover{
+	background:url(../images/logo.png) no-repeat 0px -4px;
+}
+.header_contact{
+	float:right; width:auto; padding:20px 0px 0px 0px;
+}
+.header_contact p{
+	color:#cccccc; font-size:14px; text-transform:uppercase; line-height:22px; text-align:right; font-family: 'Roboto Condensed', sans-serif; text-shadow:1px 1px rgba(18,18,18,0.9); -o-text-shadow:1px 1px rgba(18,18,18,0.9); -webkit-text-shadow:1px 1px rgba(18,18,18,0.9); -moz-text-shadow:1px 1px rgba(18,18,18,0.9);
+}
+.header_contact p a,.header_contact p span{
+	color:#d9490a;
+}
+.header_contact p a:hover{
+	color:#cccccc;
+}
+.menu{
+	position:absolute; background:url(../images/menu.png); width:100%; top:85px; box-shadow:1px 0px 16px rgba(0,0,0,0.75); -o-box-shadow:1px 0px 16px rgba(0,0,0,0.75);-webkit-box-shadow:1px 0px 16px rgba(0,0,0,0.75); -moz-box-shadow:1px 0px 16px rgba(0,0,0,0.75); z-index:9999;
+}
+.menu li{
+	float:right; width:auto; background:url(../images/menu_list.png) no-repeat left center; padding:10px 3px 0px 3px; line-height:25px;
+}
+.menu li a{
+	float:left; width:auto; font-size:13px; color:#181818; font-weight:400; font-family: 'Roboto Condensed', sans-serif; text-transform:uppercase; transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s; padding:1px 32px 10px 32px;
+}
+.menu li a:hover{
+	background:#c21a0a; color:#ffffff; border-radius:5px 5px 0px 0px; -o-border-radius:5px 5px 0px 0px; -webkit-border-radius:5px 5px 0px 0px; -moz-border-radius:5px 5px 0px 0px; padding:6px 32px 5px 32px; text-shadow:1px 1px rgba(18,18,18,0.9); -o-text-shadow:1px 1px rgba(18,18,18,0.9); -webkit-text-shadow:1px 1px rgba(18,18,18,0.9); -moz-text-shadow:1px 1px rgba(18,18,18,0.9);
+}
+.menu li a.present{
+	background:#c21a0a; color:#ffffff; text-shadow:1px 1px rgba(18,18,18,0.9); -o-text-shadow:1px 1px rgba(18,18,18,0.9); -webkit-text-shadow:1px 1px rgba(18,18,18,0.9); -moz-text-shadow:1px 1px rgba(18,18,18,0.9); border-radius:5px 5px 0px 0px; -o-border-radius:5px 5px 0px 0px; -webkit-border-radius:5px 5px 0px 0px; -moz-border-radius:5px 5px 0px 0px; padding:6px 32px 5px 32px;
+}
+.menu li:last-child{
+	background:none;
+}
+
+/*  Banner CSS starts here  */
+
+.banner{
+	position:absolute; width:100%; top:85px; height:498px;
+}
+.banner1{
+	float:left; width:100%; background:url(../images/banner1.jpg) no-repeat center center; height:498px;
+}
+.banner2{
+	float:left; width:100%; background:url(../images/banner2.jpg) no-repeat center center; height:498px;
+}
+.banner3{
+	float:left; width:100%; background:url(../images/banner3.jpg) no-repeat center center; height:498px;
+}
+
+/*  Banner CSS ends here  */
+
+.intro{
+	position:absolute; /*top:583px;*/ bottom:0px; width:100%; background:#343635;
+}
+.intro_bg{
+	float:left; width:100%; background:url(../images/intro-bg.png); padding:20px 0px; text-align:center; color:#ffffff;
+}
+.intro_bg h1{
+	font-family: 'Open Sans', sans-serif; font-size:20px; line-height:30px; padding:0px 0px 15px 0px; margin:0px; font-weight:300;
+}
+.intro_bg h1 span{
+	font-weight:400;
+}
+.intro_bg p{
+}
+
+/*   Header CSS ends here   */
+
+/*  Container CSS starts here  */
+
+.container{
+	float:left; width:100%; background:url(../images/content_bg.jpg) repeat-x top #fcfcfc; padding:40px 0px;
+}
+.services{
+	float:left; width:1000px; padding:0px 0px 40px 0px;
+}
+.services:last-child{
+	padding:0px;
+}
+.services li{
+	float:left; width:317px; padding:0px 24px 0px 0px!important;
+}
+.services li:nth-child(3){
+	padding:0px!important;
+}
+.services li div.services_block{
+	float:left; width:315px; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; padding:1px 1px 51px 1px; position:relative;
+}
+.services li:hover div.services_block{
+	background:url(../images/menu.png); border:1px solid rgba(50,53,54,0.1); padding:0px 0px 50px 0px;
+}
+.services li div.services_block h1{
+	text-align:center; padding:10px; font-family: 'Roboto Condensed', sans-serif; text-transform:uppercase; color:#181818; font-weight:400; font-size:17px; margin-bottom:1px;
+}
+.services li:hover div.services_block h1{
+	border-bottom:1px solid rgba(50,53,54,0.1); margin:0px; color:#c21a0a;
+}
+.services li div.services_block h1 span{
+	font-family: 'Roboto', sans-serif; font-size:12px; color:#181818; font-size:14px; text-transform:lowercase; color:#181818; font-size:12px;
+}
+.services li div.services_block p{
+	padding:10px 15px; line-height:19px;
+}
+.services li div.services_block a.read_more{
+	position:absolute; bottom:15px; left:15px; background:url(../images/read-more.png) no-repeat; width:108px; height:29px;
+}
+.services li:hover div.services_block a.read_more{
+	bottom:14px; left:14px;
+}
+.services li div.services_block a.read_more:hover{
+	background-position:0px -29px;
+}
+.sub_content{
+	float:left; width:100%; background:url(../images/sub_content_bg.jpg) repeat-x top #eeeeee; padding:40px 0px 20px 0px;
+}
+.image_block{
+	float:left; width:318px; position:relative;
+}
+.image_block img{
+	 border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+.img_caption{
+	position:absolute; bottom:0px; background:rgba(28,28,28,0.6); color:#ffffff; text-shadow:1px 1px rgba(18,18,18,0.9); -o-text-shadow:1px 1px rgba(18,18,18,0.9); -webkit-text-shadow:1px 1px rgba(18,18,18,0.9); -moz-text-shadow:1px 1px rgba(18,18,18,0.9); padding:0px 10px; width:298px; text-transform:uppercase; line-height:30px; border-radius:0px 0px 5px 5px; -o-border-radius:0px 0px 5px 5px; -webkit-border-radius:0px 0px 5px 5px; -moz-border-radius:0px 0px 5px 5px;
+}
+
+/*  Container CSS ends here  */
+
+.sub_content_block{
+	float:left; width:480px;
+}
+.heading{
+	float:left; width:100%; padding:0px 0px 15px 0px;
+}
+.heading h1{
+	font-family: 'Roboto Condensed', sans-serif; text-transform:uppercase; color:#181818; font-weight:400; border-bottom:1px dotted rgba(18,18,18,0.25); line-height: 35px;
+font-size: 18px; text-indent: 10px;
+}
+.sub_content_block div.content_part{
+	float:left; width:100%;
+}
+.sub_content_block div.content_part li{
+	float:left; width:95%; background:url(../images/sub-list.png) no-repeat 2px 4px; padding-left:5%; padding-bottom:7px;
+}
+.right{
+	float:right!important;
+}
+
+.testimonials_content{
+	float:left; width:92%; padding:4%; background:rgba(156,155,155,0.3); border-radius:5px; -o-border-radius:5px;-webkit-border-radius:5px; -moz-border-radius:5px; position:relative;
+}
+.testimonials_content img.testimonials_image{
+	position:absolute; bottom:-11px; left:30px;
+}
+.testimonials_content p{
+	background:url(../images/testimonials.png) no-repeat left top; text-indent: 26px; line-height: 21px;
+}
+.testimonials_name{
+	float:left; width:100%; position:relative; padding:20px 0px 0px 0px;
+}
+.testimonials_name img{
+	position:absolute; width:70px; height:70px; left:12px; border:1px solid rgba(200,201,200,0.7); border-radius:50%; -o-border-radius:50%;-webkit-border-radius:50%; -moz-border-radius:50%;
+}
+.testimonials_name p{
+	padding:20px 0px 0px 95px; font-size:18px; font-weight:300; text-transform:uppercase;
+}
+.testimonials_name p span{
+	font-size:13px; font-weight:400; text-transform:capitalize;
+}
+
+/*  Footer CSS starts here */
+
+.footer{
+	float:left; width:100%; background:url(../images/footer_bg.jpg); padding:20px 0px 0px 0px;
+}
+.footer_block{
+	float:left; width:100%; padding-bottom:20px;
+}
+.footer_links{
+	float:left; width:100%; padding:10px 0px 0px 0px;
+}
+.footer_links li{
+	float:left; width:49%; line-height:25px;
+}
+.footer_links li a{
+	float:left; width:90%; background:url(../images/footer_list.png) no-repeat 9px 7px; padding-left:10%; color:#dddddd;
+}
+.footer_links li a:hover{
+	color:#615f5f;
+}
+.quick_links{
+	float:left; width:48%;
+}
+.footer div.heading h1{
+	color:#ffffff; font-weight:400; border-bottom:1px dotted rgba(222,222,222,0.25); font-size: 13px; text-indent: 10px; text-transform:uppercase;
+}
+.footer_right{
+	float:right; width:48%;
+}
+.questions{
+	float:left; width:48%;
+}
+.questions p{
+	color:#dddddd; padding:0px 0px 20px 0px;
+}
+.questions a:hover{
+	color:#615f5f;
+}
+.social_media{
+	float:left; width:100%; padding:10px 0px 125px 0px; background:url(../images/footer.png) no-repeat bottom left;
+}
+.social_media li{
+	float:left; width:37px; padding:0px 0px 0px 7px;
+}
+.social_media li a{
+	float:left; background:url(../images/social-media.png) no-repeat; width:37px; height:37px;
+}
+.social_media li a.facebook{
+	background-position:0px 0px;
+}
+.social_media li a.twitter{
+	background-position:-82px 0px;
+}
+.social_media li a.gplus{
+	background-position:-41px 0px;
+}
+.copyrights{
+	float:left; width:100%; background:rgba(18,18,18,0.3);
+}
+.copyrights p{
+	line-height:50px; color:#dddddd; text-transform:uppercase;
+}
+.copyrights a{
+	color:#dddddd;
+}
+.copyrights a:hover{
+	color:#615f5f;
+}
+
+/*  Footer CSS ends here  */
+.buttons_customers{
+	display:none!important;
+}
+
+
+/*  Inner Page CSS starts here  */
+
+.inner_page{
+	height:282px;
+}
+.breadcrumb{
+	float: left;
+	width: 1000px;
+	padding: 5px 0px 10px 0px;
+}
+.breadcrumb li{
+	float: left;
+	width: auto;
+	padding: 0px 25px 0px 15px!important;
+	background: url(../images/breadcrumb_list.png) no-repeat right center;
+}
+.breadcrumb li:last-child{
+	background:none;
+}
+.breadcrumb li a{
+	color:#4b4a49;
+}
+.breadcrumb li a.current{
+	color:#121212;
+}
+.sub_container{
+	float:left; width:100%; background:url(../images/content_bg.jpg) repeat-x top #fcfcfc; padding:10px 0px 40px 0px;
+}
+.main{
+	float:left; width:1000px;
+}
+.widgets{
+	float: left;
+	width: 260px;
+}
+.inner_container{
+	float: right;
+	width: 720px;
+}
+.widgets_block{
+	float: left;
+	width: 258px;
+	margin: 0px 0px 15px 0px;
+	border: 1px solid #e2e1e1;
+	overflow: hidden;
+}
+.widgets_contact{
+	float: left;
+	background: url(../images/contact_bg.png) no-repeat;
+	width: 260px;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #ffffff;
+	line-height: 35px;
+	text-indent: 45px;
+}
+.widgets_block li{
+	float: left;
+	width: 258px;
+	background: url(../images/widgets_bg.jpg) repeat-x;
+}
+.widgets_block li a{
+	float: left;
+	width: 258px;
+	line-height: 40px;
+	background: url(../images/widgets_list_bg.png) no-repeat 18px center;
+	color: #111111;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-indent: 30px;
+	transition: text-indent 0.3s ease-out 0s;
+	-o-transition: text-indent 0.3s ease-out 0s;
+	-webkit-transition: text-indent 0.3s ease-out 0s;
+	-moz-transition: text-indent 0.3s ease-out 0s;
+}
+.widgets_block li a:hover,.widgets_block li a.present{
+	background:url(../images/widgets_list_bg_hover.png) no-repeat 18px center #c21a0a; color:#ffffff; text-indent:35px;
+}
+.inner_container h1{
+	font-size: 21px;
+	font-weight: 300;
+	padding: 0px 0px 10px 0px;
+	color: #0c0c0c;
+	text-transform: uppercase;
+	line-height: 35px;
+}
+.inner_container p{
+	line-height: 19px;
+	padding: 0px 0px 20px 0px;
+	text-align: justify;
+}
+.inner_container blockquote{
+	margin:0px 0px 35px 0px; background:url(../images/menu.png); padding:10px; font-size:14px; line-height:21px; text-indent:15px; text-align:justify; border-left:3px solid #e2e1e1
+}
+
+/*  Inner Page CSS ends here  */
+
+/*  Contact Us CSS starts here */
+
+.inner_container_block{
+	float:left; width:100%;
+}
+.contact_block{
+	float: left;
+	width: 258px;
+	border: 1px solid #e2e1e1;
+	margin: 0px 0px 15px 0px; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+.contact_block div.sub_heading{
+	float: left;
+	width: 258px;
+	background: url(../images/widgets_bg.jpg) repeat-x;
+}
+.contact_block div.sub_heading a{
+	float: left;
+	width: 258px;
+	line-height: 40px;
+	background: url(../images/widgets_list_bg.png) no-repeat 18px center;
+	color: #111111;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-indent: 30px;
+}
+.contact_block div.content{
+	float: left;
+	width: 228px;
+	padding: 12px 15px;
+}
+.contact_block div.content p{
+	color: #262625;
+	line-height: 22px;
+}
+.contact_page{
+	float: left;
+	width: 100%;
+}
+.contact_page_block{
+	float: left;
+	width: 342px;
+}
+.contact_field{
+	float: left;
+	width: 342px;
+	padding: 0px 0px 14px 0px;
+}
+.contact_field input[type="text"], .contact_field textarea,.contact_field input[type="password"]{
+	border: 1px solid #d1cfcf;
+	background: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #121212;
+	padding: 9px;
+	width: 322px;
+	text-transform: uppercase;
+	font-weight: 400; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+.contact_field textarea{
+	height: 157px;
+}
+.no_padding{
+	padding: 0px;
+}
+.container ul li{
+	display: block;
+	line-height: 18px;
+	padding: 0px 0px 10px 0px;
+}
+.right{
+	float: right!important;
+}
+.contact_field li{
+	width:48%; padding:0px!important;
+}
+.contact_field li input[type="reset"]{
+	background: url(../images/reset.jpg) repeat-x;
+	line-height: 32px;
+	width: 99%;
+	border: 1px solid #d1cfcf;
+	color: #222222;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif; cursor:pointer; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+.contact_field li input[type="submit"]{
+	background: url(../images/submit.jpg) repeat-x;
+	line-height: 34px;
+	width: 99%;
+	border: none;
+	color: #ffffff;
+	text-shadow: 1px 1px rgba(22,22,22,0.75);
+	-o-text-shadow: 1px 1px rgba(22,22,22,0.75);
+	-webkit-text-shadow: 1px 1px rgba(22,22,22,0.75);
+	-moz-text-shadow: 1px 1px rgba(22,22,22,0.75);
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+
+/*  Contact Us CSS ends here */
+
+/*  Services CSS starts here  */
+
+.services_main{
+	float:left; width:1000px;
+}
+.services_heading{
+	float:left; width:1000px;
+}
+.services_heading h1{
+	font-size: 21px;
+	font-weight: 300;
+	padding: 0px 0px 10px 0px;
+	color: #0c0c0c;
+	text-transform: uppercase;
+	line-height: 35px;
+}
+.services_content{
+	float:left; width:1000px;
+}
+.services_content li{
+	float:left; width:978px; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; background:url(../images/menu.png); border:1px solid rgba(50,53,54,0.1); padding:10px!important; margin:0px 0px 15px 0px; transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s; position:relative;
+}
+.services_content li:nth-child(3n){
+	padding:10px!important;
+}
+.services_content li div.services_image{
+	float:left; width:318px; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+.services_content li img{
+	border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; margin:0px 15px 0px 0px; float:left;
+}
+.services_content li span{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #181818;
+	font-weight: 400;
+	font-size: 17px; display:block; padding:5px 0px 15px 0px;
+}
+.services_content li p{
+	padding:0px 10px 0px 0px; text-align:justify; line-height:20px;
+}
+.services_content li:hover{
+	box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); -o-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); -webkit-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35);-moz-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35);
+}
+.services_content li:hover span{
+	color:#c21a0a;
+}
+.services_content li a.features{
+	position:absolute; line-height:25px; top:10px; right:10px; background:rgba(156,155,155,0.4); border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; text-transform:uppercase; font-size:12px; color:#444444; padding:0px 20px;
+}
+.services_content li a.features:hover{
+	background:#c21a0a; color:#ffffff; text-shadow:1px 1px rgba(18,18,18,0.9); -o-text-shadow:1px 1px rgba(18,18,18,0.9); -webkit-text-shadow:1px 1px rgba(18,18,18,0.9); -moz-text-shadow:1px 1px rgba(18,18,18,0.9);
+}
+
+/*  Services CSS ends here  */
+/*  Login CSS starts here */
+
+.login_wrapper{
+	width:550px; margin:0 auto;
+}
+.login_block{
+	float:left; width:500px; padding:25px; /*box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); -o-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); -webkit-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35);-moz-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); background:url(../images/menu.png); border:1px solid rgba(50,53,54,0.2); border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;*/
+}
+.login_block h1{
+	font-size: 21px;
+	font-weight: 300;
+	padding: 0px 0px 10px 0px;
+	color: #0c0c0c;
+	text-transform: uppercase;
+	line-height: 35px; text-align:center;
+}
+.login_block div.contact_field{
+	width:500px;
+}
+.login_block div.contact_field input[type="text"],.login_block div.contact_field input[type="password"]{
+	width:480px;
+}
+.login_wrapper div.contact_field li a{
+	background: url(../images/reset.jpg) repeat-x;
+	line-height: 32px;
+	width: 99%;
+	border: 1px solid #d1cfcf;
+	color: #222222;
+	text-transform: uppercase; float:left; text-align:center;
+	font-family: 'Roboto', sans-serif; cursor:pointer; border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
+}
+
+/*  Login CSS ends here  */
+
+/*  Features Content CSS starts here */
+
+.features_content_block{
+	position:fixed; width:100%; height:100%; z-index:99999; top:10%;
+}
+.features_content_sub{
+	width:700px; margin:0 auto;
+}
+.features_content{
+	width:650px; box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); -o-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); -webkit-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35);-moz-box-shadow:1px 0 7px rgba(0, 0, 0, 0.35); background:url(../images/menu.png); border:1px solid rgba(50,53,54,0.2); border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; padding:25px; float:left; position:relative;
+}
+.features_content h1{
+	font-size: 21px;
+	font-weight: 300;
+	padding: 0px 0px 10px 0px;
+	color: #0c0c0c;
+	text-transform: uppercase;
+	line-height: 35px; float:left; width:100%;
+}
+.features_content h2{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #181818;
+	font-weight: 400;
+	font-size: 17px;
+	display: block;
+	padding: 5px 0px 15px 0px; float:left; width:100%;
+}
+.features_content li{
+	float: left;
+	width: 299px;
+	line-height: 21px;
+	background: url(../images/widgets_list_bg.png) no-repeat 4px 8px;
+	color: #111111;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0px 10px 11px 16px;
+}
+.overlay{
+	background:rgba(18,18,18,0.5); top:0; width:100%; height:100%; position:fixed; z-index:99990;
+}
+.para{
+	float:left; width:100%; padding:10px 0px 0px 0px;
+}
+.para p{
+	color: #111111;
+	font-size: 12px; line-height:23px;
+}
+.features_content_block a.popup-close{
+	background:url(../images/popupclose.png) no-repeat; width:30px; height:30px; position:absolute; top:10px; right:10px;
+}
+
+/*  Features Content CSS ends here */
+
+
+
+.breadcrumb li.current{
+	padding: 0px 25px 0px 15px!important;
+}
+
+/*  Plans CSS starts here */
+
+.plans li{
+	float:left; width:224px; padding:0px 0px 15px 0px!important; background:url(../images/menu.png); border:1px solid rgba(50,53,54,0.1); border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; transition:all 0.25s ease-out 0s; -o-transition:all 0.25s ease-out 0s; -webkit-transition:all 0.25s ease-out 0s; -moz-transition:all 0.25s ease-out 0s; margin:0px 20px 15px 0px;
+}
+.plans li h1{
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #c21a0a;
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 1px; line-height:20px; border-bottom:1px solid rgba(50,53,54,0.1); padding:10px;
+}
+.plans li h1 span {
+	font-family: 'Roboto', sans-serif;
+	color: #181818;
+	text-transform: uppercase;
+	color: #181818;
+	font-size: 12px;
+}
+.plans li p{
+	padding:10px 0px 0px 10px;
+}
+.plans li:hover{
+	box-shadow:1px 0 6px rgba(0, 0, 0, 0.35); -o-box-shadow:1px 0 6px rgba(0, 0, 0, 0.35); -webkit-box-shadow:1px 0 6px rgba(0, 0, 0, 0.35);-moz-box-shadow:1px 0 6px rgba(0, 0, 0, 0.35);
+}
+.plans li:hover h1{
+	border-bottom:1px solid rgba(50,53,54,0.2);
+}
+.plans li:nth-child(3n){
+	padding:0px 0px 10px 0px!important;
+}
+
+/*  Plans CSS ends here */
